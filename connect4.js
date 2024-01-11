@@ -121,3 +121,10 @@ document.getElementById('start-game').addEventListener('click', () => {
   let p2 = new Player(document.getElementById('p2-color').value);
   new Game(p1, p2);
 });
+
+//improvements and suggestions
+//1. Typo in the makeBoard method where board.push should be corrected to this.board.push.
+//2. In the makeHtmlBoard method, board.innerHtml should be corrected to board.innerHTML.
+//3. The currPlayer property is used in some places, but it's not defined in the Game class. Correct it to currentPlayer.
+//4. Consider updating the UI rather than using alert when calling endGame method for a better user experience.
+//5. handleClick method has a logic error in updating the currentPlayer property. Correct it to this.currentPlayer.
